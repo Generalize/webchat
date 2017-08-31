@@ -1,0 +1,64 @@
+<template name="msgItem">
+  <view wx:for="{{contents}}" wx:key="item.id" style="display:inline-block;">
+    <text wx:if="item.type=='text'" style="padding:0;margin:0;width:auto;">{{item.text}}</text>
+    <image wx:if="item.type=='image'"  style="width:21px;height:21px;vertical-align:middle;margin:0 3px;" src="{{item.url}}"></image>
+  </view>
+</template>
+
+<scroll-view  scroll-y="true" scroll-with-animation="true" class="scroll-view" animation="{{animation1}}" bindtap="nomore" upper-threshold="1" bindscrolltoupper="getMore" scroll-top="{{scroll_top}}">
+    
+    <view wx:for="{{messages}}" wx:for-item="msg" wx:for-index="msg_index" wx:key="msg.id">
+      <view  wx:if="{{msg.self==1}}"class="self-messages">
+        <view class="self-user">
+          <image clas="self-avatar" src="{{msg.avatarUrl}}"></image>
+        </view>
+        <view class="self-pointer"></view>
+        <view class="self-msg">
+          <text class="self-text">{{msg.text}}</text>
+          <audio bindplay="start_play" bindended="end_play" data-voice="{{msg.audio}}" wx:if="{{msg.audio}}" src="{{msg.audio}}" bindtap="play_voice" id="{{msg.audio}}">
+            <view class="msg-voice-w">
+                <image id="d"  bindtap="play_voice" wx:if="{{msg.play}}" data-play="{{msg.play}}" data-voice="{{msg.audio}}" class="voice-ico" src="/images/right.gif"></image>
+                <image id="s" bindtap="play_voice" wx:else data-play="{{msg.play}}" data-voice="{{msg.audio}}" class="voice-ico" src="/images/right.svg"></image>
+            </view>
+          </audio>
+          <view class="self-img-box" wx:for="{{msg.image}}" wx:for-index="{{img_index}}" wx:for-item="img" wx:key="{{img_index}}" >
+            <image class="self-img" src="{{img.src}}" class="message-img"></image>
+          </view> 
+        </view>
+      </view>
+      <view wx:else class="messages">
+        <view class="user">
+          <image clas="avatar" src="{{msg.avatarUrl}}"></image>
+        </view>
+        <!-- <text class="msg-user">{{msg.nickName}}</text> -->
+        <view class="pointer"></view>
+        <view class="msg">
+          <text class="text">{{msg.text}}</text>
+          <audio  bindplay="start_play" bindended="end_play" data-voice="{{msg.audio}}" wx:if="{{msg.audio}}" src="{{msg.audio}}" bindtap="play_voice" id="{{msg.audio}}">
+            <view class="msg-voice-w">
+                <image id="d" bindtap="play_voice" wx:if="{{msg.play}}" data-play="{{msg.play}}" data-voice="{{msg.audio}}" class="voice-ico" src="/images/left.gif"></image>
+                <image  id="s" bindtap="play_voice" wx:else data-play="{{msg.play}}" data-voice="{{msg.audio}}" class="voice-ico" src="/images/left.svg"></image>
+            </view>
+          </audio>
+          <view class="img-box" wx:for="{{msg.image}}" wx:for-index="{{img_index}}" wx:for-item="img" wx:key="{{img_index}}" >
+            <image class="img" src="{{img.src}}" class="message-img"></image>
+          </view> 
+        </view>
+      </view>
+    </view>
+</scroll-view>
+
+ <view class="send-msg" animation="{{animation2}}">
+    <view class="msg-voice icon" bindtap="change_voice"><image src="{{voice_src}}"></image></view>
+    <input bindfocus="onFocus" bindblur="onBlur" wx:if="{{voice}}" class="msg-text" placeholder="请输入消息" value="{{msg}}" bindinput="getInput"/>
+    <view wx:else class="msg-voice-btn"><button bindtouchstart="voice_start" bindtouchend="voice_end" >{{voice_click}}</button></view>
+    <view  class="msg-more icon" bindtap="more" animation="{{animation4}}" ><image src="/images/plus.svg" ></image></view>
+    <view  class="msg-send icon"><image src="/images/send.svg" bindtap="sendMsg"></image></view>
+</view> 
+
+<view class="plus-box" wx:if="{{plus}}" animation="{{animation3}}">
+    <view class="plus-panel">
+        <image class="moreImage" bindtap="chooseImg" src="/images/image.svg"></image>
+        <image class="moreImage" bindtap="getlocat" src="/images/map.svg"></image>
+    </view>
+</view>

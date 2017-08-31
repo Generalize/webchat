@@ -1,0 +1,152 @@
+page{
+  background: #f5f5f5;
+}
+.scroll-view{
+  height:calc(100% - 150rpx);
+}
+.messages{
+  display: flex;
+  margin:30rpx 60rpx 30rpx 30rpx;
+}
+
+.user image{
+  width:85rpx;
+  height: 85rpx;
+}
+.pointer{
+  height: 0; width: 0; 
+  border: 15rpx solid; 
+  margin-top: 30rpx; 
+  border-color: transparent #fff transparent transparent;
+}
+.msg{
+  background: #fff;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+.img-box image{
+  width:150rpx;
+  height:150rpx;
+}
+.msg text{
+  flex-wrap: wrap;
+  color:#000;
+}
+
+.self-messages{
+  display: flex;
+  flex-direction:row-reverse;
+  margin:30rpx 60rpx 30rpx 30rpx;
+}
+.self-user image{
+  width:85rpx;
+  height: 85rpx;
+}
+.self-pointer{
+  height: 0; width: 0; 
+  border: 15rpx solid; 
+  margin-top: 30rpx; 
+  border-color: transparent transparent transparent #c5e7f1;
+}
+.self-msg{
+  background: #c5e7f1;
+  padding: 20rpx;
+  border-radius: 10rpx;
+}
+.self-img-box image{
+  width:150rpx;
+  height:150rpx;
+}
+.self-msg text{
+  flex-wrap: wrap;
+  color:#000;
+}
+
+.wa-row{
+  height: 50rpx;
+}
+
+.send-msg{
+  display: flex;
+  position: fixed;
+  bottom: 10rpx;
+  /* height: 110rpx; */
+  background: #f5f6f7;
+  width:100%;
+  align-items:center;
+  border-top:1px solid #dedede;
+  border-bottom: none;
+  padding: 20rpx 10rpx 10rpx 10rpx;
+  --max : 88%;
+}
+/* https://servicewechat.com/images/plus.png-do-not-use-local-path-./pages/message/message.wxss&216&14 Failed to load resource: the  */
+.msg-voice{
+  width: 65rpx;
+  height: 65rpx;
+}
+.msg-text{
+  /* line-height:65rpx; */
+  /* width: calc(var(--max) - 195rpx); */
+  border:1px solid #dedede;
+  margin:0 15rpx;
+  padding:5rpx 10rpx;
+border-radius: 5px;
+width: 65%;
+}
+
+.msg-icon{
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.msg-more{
+  width: 65rpx;
+  height: 65rpx;
+}
+.msg-send{
+  width: 65rpx;
+  height: 65rpx;
+}
+
+.icon image{
+  width: 65rpx;
+  height: 65rpx;
+}
+.plus-box{
+  border-top: 1px solid #dedede;
+  width: 100%;
+  height: 30%;
+  position: fixed;
+  bottom: -30%;
+}
+.plus-panel image{
+  width:120rpx;
+  height:120rpx;
+}
+.moreImage{
+  margin: 35rpx 0rpx 0rpx 40rpx;
+}
+.msg-voice-btn{
+  display: flex;
+  /* width: calc(var(--max) - 195rpx); */
+  width: 72%;
+}
+.msg-voice-btn button{
+  width: 100%;
+  height: 62rpx;
+  line-height: 50rpx;
+  margin:0 15rpx;
+  font-size: 40rpx;
+  padding:5rpx 10rpx;
+
+}
+.voice-ico{
+  width:128px;
+  height:16px;
+  position: relative;
+  top: 5rpx;
+
+}
+.msg-voice-w{
+  width: 300rpx;
+}

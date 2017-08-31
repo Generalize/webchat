@@ -1,0 +1,19 @@
+{
+  "pages": [
+    "pages/index/index",
+    "pages/message/message",
+    "pages/test/test",
+    "pages/search/search"
+  ],
+  "window": {
+    "backgroundTextStyle": "dark",
+    "navigationBarBackgroundColor": "#79ceed",
+    "navigationBarTitleText": "云云云",
+    "navigationBarTextStyle": "#fff",
+    "backgroundColor": "#ECF8EB"
+  },
+  "networkTimeout": {
+    "request": 10000,
+    "downloadFile": 10000
+  }
+}

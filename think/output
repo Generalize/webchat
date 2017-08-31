@@ -1,0 +1,182 @@
+Workerman\Connection\TcpConnection Object
+(
+    [onMessage] => Array
+        (
+            [0] => app\fast\model\Websocket Object
+                (
+                    [url] => websocket://0.0.0.0:8989
+                )
+
+            [1] => onMessage
+        )
+
+    [onClose] => Array
+        (
+            [0] => app\fast\model\Websocket Object
+                (
+                    [url] => websocket://0.0.0.0:8989
+                )
+
+            [1] => onClose
+        )
+
+    [onError] => Array
+        (
+            [0] => app\fast\model\Websocket Object
+                (
+                    [url] => websocket://0.0.0.0:8989
+                )
+
+            [1] => onError
+        )
+
+    [onBufferFull] => 
+    [onBufferDrain] => 
+    [protocol] => \Workerman\Protocols\Websocket
+    [transport] => ssl
+    [worker] => Workerman\Worker Object
+        (
+            [id] => 2
+            [name] => none
+            [count] => 4
+            [user] => root
+            [group] => 
+            [reloadable] => 1
+            [reusePort] => 
+            [onWorkerStart] => Array
+                (
+                    [0] => app\fast\model\Websocket Object
+                        (
+                            [url] => websocket://0.0.0.0:8989
+                        )
+
+                    [1] => onWorkerStart
+                )
+
+            [onConnect] => Array
+                (
+                    [0] => app\fast\model\Websocket Object
+                        (
+                            [url] => websocket://0.0.0.0:8989
+                        )
+
+                    [1] => onConnect
+                )
+
+            [onMessage] => Array
+                (
+                    [0] => app\fast\model\Websocket Object
+                        (
+                            [url] => websocket://0.0.0.0:8989
+                        )
+
+                    [1] => onMessage
+                )
+
+            [onClose] => Array
+                (
+                    [0] => app\fast\model\Websocket Object
+                        (
+                            [url] => websocket://0.0.0.0:8989
+                        )
+
+                    [1] => onClose
+                )
+
+            [onError] => Array
+                (
+                    [0] => app\fast\model\Websocket Object
+                        (
+                            [url] => websocket://0.0.0.0:8989
+                        )
+
+                    [1] => onError
+                )
+
+            [onBufferFull] => 
+            [onBufferDrain] => 
+            [onWorkerStop] => 
+            [onWorkerReload] => 
+            [transport] => ssl
+            [connections] => Array
+                (
+                    [1] => Workerman\Connection\TcpConnection Object
+                        (
+                            [onMessage] => Array
+                                (
+                                    [0] => app\fast\model\Websocket Object
+                                        (
+                                            [url] => websocket://0.0.0.0:8989
+                                        )
+
+                                    [1] => onMessage
+                                )
+
+                            [onClose] => Array
+                                (
+                                    [0] => app\fast\model\Websocket Object
+                                        (
+                                            [url] => websocket://0.0.0.0:8989
+                                        )
+
+                                    [1] => onClose
+                                )
+
+                            [onError] => Array
+                                (
+                                    [0] => app\fast\model\Websocket Object
+                                        (
+                                            [url] => websocket://0.0.0.0:8989
+                                        )
+
+                                    [1] => onError
+                                )
+
+                            [onBufferFull] => 
+                            [onBufferDrain] => 
+                            [protocol] => \Workerman\Protocols\Websocket
+                            [transport] => ssl
+                            [worker] => Workerman\Worker Object
+ *RECURSION*
+                            [id] => 1
+                            [_id:protected] => 1
+                            [maxSendBufferSize] => 1048576
+                            [_socket:protected] => Resource id #88
+                            [_sendBuffer:protected] => 
+                            [_recvBuffer:protected] => 
+                            [_currentPackageLength:protected] => 0
+                            [_status:protected] => 2
+                            [_remoteAddress:protected] => 27.38.56.34:49870
+                            [_isPaused:protected] => 
+                            [_sslHandshakeCompleted:protected] => 1
+                            [websocketHandshake] => 1
+                            [websocketDataBuffer] => 
+                            [websocketCurrentFrameLength] => 0
+                            [websocketCurrentFrameBuffer] => 
+                            [websocketType] => 
+                        )
+
+                    [2] => Workerman\Connection\TcpConnection Object
+ *RECURSION*
+                )
+
+            [protocol] => \Workerman\Protocols\Websocket
+            [_autoloadRootPath:protected] => /home/www/think/vendor/topthink/think-worker/src
+            [_mainSocket:protected] => Resource id #76
+            [_socketName:protected] => websocket://0.0.0.0:8989
+            [_context:protected] => Resource id #64
+            [workerId] => 000000003df0efee00000000658d3aa6
+        )
+
+    [id] => 2
+    [_id:protected] => 2
+    [maxSendBufferSize] => 1048576
+    [_socket:protected] => Resource id #92
+    [_sendBuffer:protected] => 
+    [_recvBuffer:protected] => 
+    [_currentPackageLength:protected] => 0
+    [_status:protected] => 2
+    [_remoteAddress:protected] => 27.38.56.34:49766
+    [_isPaused:protected] => 
+    [_sslHandshakeCompleted:protected] => 
+)

@@ -1,0 +1,103 @@
+/**index.wxss**/
+.userItem{
+  height:80rpx;
+  padding:5px 10px;
+  display: flex;
+  border-bottom:1px solid #ddd;
+}
+.pic image{
+  width:80rpx;
+  height: 80rpx;
+  margin-right: 10px;
+}
+.userItem .name{
+  font-size: 15px;
+  padding:5px 0;
+  font-weight: bold;
+  flex:2;
+}
+.userItem .time{
+  font-size: 13px;
+}
+
+.message{
+  color: gray;
+  margin-top:10px;
+}
+.messagetime{
+  color:gray;
+  font-size:13px;
+}
+
+.tips{
+  margin-top:50px;
+  color: gray;
+  text-align: center;
+}
+.add-btn{
+  position: fixed;
+  bottom: 3%;
+  left:42%;
+  width: 110rpx;
+  height: 110rpx;
+  background:  url('../../images/add.png') no-repeat;
+  background-size: 110rpx 110rpx;
+  border-radius: 110rpx;
+}
+.add-panel{
+  width: 100%;
+  height: 100%;
+  position: fixed;
+  top:0;
+  background: rgba(0, 0, 0, 0.5);
+  display: none;
+}
+.add-title{
+  display: block;
+  margin: 40rpx auto 30rpx;
+}
+.form{
+  width: 70%;
+  margin: 0 auto;
+  background: #ECF8EB;
+  padding: 3%;
+  position: fixed;
+  bottom: 40%;
+  left:12%;
+  border-radius: 10rpx;
+}
+.form input{
+  border: 1px solid #97CEA6;
+}
+.form button{
+  width: 30%;
+  height: 20%;
+  margin: 20rpx 9%;
+  float: left;
+}
+
+.search-btn{
+  display: flex;
+  background: #eee;
+  padding: 0 30rpx;
+}
+.search-btn input{
+  padding: 0;
+  width: calc( 100% - 100rpx );
+  height:60rpx;
+  font-size:40rpx;
+}
+.search-btn button{
+  background: none;
+  padding: 0;
+  margin: 0;
+  font-size:0;
+}
+.search-btn button::after{
+  width: 0;
+  height: 0;
+}
+.search-btn image{
+  width:60rpx;
+  height:60rpx;
+}

@@ -1,0 +1,16 @@
+<scroll-view scroll-y="true">
+  <view class="search-btn">
+      <input placeholder="房间名称" value="{{search}}" bindinput="search_input" />
+      <image class="search-ico" bindtap="searchroom" src="../../images/lupita.png"></image>
+  </view>
+  <view class="item-avatar-md" wx:for="{{list}}" wx:key="i.id" wx:for-item="i" wx:for-index="index" data-index="{{index}}" data-name="{{i.name}}" data-id="{{i.id}}" bindtap="joinRoom">
+      <image src="{{i.avatar}}"></image>
+      <view class="item-text">
+        <view class="text_box">
+          <view class="flex">
+            <text class="title">{{i.name}}</text>
+          </view>
+        </view>
+      </view>
+  </view>
+</scroll-view>
